@@ -33,9 +33,11 @@ int main(){
     cin>>n;
     int processes[n];
     int burst_time[n];
-    for(int i =0;i<n;i++){
-        cin>>processes[i]>>" ">>burst_time[n];
-    }
+    for(int i =0;i<n;i++)
+        cin>>processes[i];
+    
+    for(int i=0;i<n;i++)
+        cin>>burst_time[i];
     findavgTime(processes,n,burst_time);
     return 0;
 }
